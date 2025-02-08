@@ -13,6 +13,7 @@ st.title("ChatBot YAS 🧠")
 st.caption("A Streamlit chatbot powered by Mistral 🤓")
 txtinput=st.text_input("Comment je peux vous aider aujourd'hui ?")
 
+    
 model = "mistral-large-latest"
 client = Mistral(api_key="XimjtoeOsG5fpSy8PTahnxkjy9mgKjK6")
 
@@ -25,4 +26,5 @@ chat_response = client.chat.complete(
          },
      ]
  )
-print(chat_response.choices[0].message.content)
+st.write(chat_response.choices[0].message.content)
+
