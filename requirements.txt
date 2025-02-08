@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+openpyxl==3.0.14
+mistralai
+mistral
